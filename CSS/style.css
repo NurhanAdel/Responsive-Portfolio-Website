@@ -1,0 +1,575 @@
+/* GOOGLE FONTS IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rock+Salt&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Teko:wght@300..700&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* DRY CODE */
+.text-color {
+    color: #e65f78;
+}
+
+.back-color {
+    background-color: #e65f78;
+}
+
+.page-color {
+    background-color: rgb(244, 238, 231);
+}
+
+h1 {
+    font-family: "Rock Salt", cursive;
+}
+
+
+h2 {
+    font-family: "Shadows Into Light", cursive;
+    letter-spacing: 10px;
+}
+
+h3 {
+    font-family: "Architects Daughter", cursive;
+
+}
+
+h4 {
+    font-family: "Zeyada", cursive;
+}
+
+
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+p {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+
+
+
+/* ---------------------------------------------------------- */
+/* HOME-PAGE |S T A R T */
+#homePage {
+    background-image: url(../IMGS/1.jpg);
+    background-size: cover;
+
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+}
+
+
+/* Navbar */
+.navbar {
+    box-shadow: 5px 5px 20px rgb(45, 44, 43);
+}
+
+.nav-link {
+    font-family: "Khand", sans-serif;
+    transition: 0.6s;
+}
+
+.navbar-nav .nav-link.active,
+.nav-link:hover {
+    font-family: "Khand", sans-serif;
+    color: #e65f78;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+/* Navbar */
+/* ------------------------- */
+/* Content */
+
+.welcome {
+    letter-spacing: 15px;
+
+}
+
+.contentText-1 {
+    line-height: 5px;
+}
+
+.download {
+    border: 3px solid #e65f78;
+    transition: 0.5s;
+
+
+}
+
+.download:hover {
+    background-color: bisque !important;
+    color: black !important;
+    transform: scale(1.1);
+
+
+}
+
+.contentShape {
+    width: 27px;
+    height: 45px;
+    border: 3px solid bisque;
+    position: absolute;
+    bottom: 0px;
+    right: 50%;
+    transform: translateX(50%);
+    cursor: pointer;
+    animation-name: upDown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+
+}
+
+.contentShape::after {
+    content: " ";
+    width: 3px;
+    height: 10px;
+    background-color: bisque;
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+@keyframes upDown {
+    10% {
+        bottom: 40px;
+    }
+
+    20% {
+        bottom: 30px;
+    }
+
+    40% {
+        bottom: 0px;
+    }
+
+    50% {
+        bottom: 15px;
+    }
+
+}
+
+/* Content */
+/* ------------------------- */
+/* FixedIcons */
+.settings {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 300px;
+    left: 0px;
+    z-index: 999;
+
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    background-color: #e65f78;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 999;
+}
+
+/* FixedIcons */
+/* HOME-PAGE |E N D */
+
+
+
+/* ---------------------------------------------------------- */
+/* ABOUT-PAGE|S T A R T */
+.aboutIcons {
+    list-style-type: none;
+    padding: 40px 0px;
+    display: flex;
+    gap: 15px;
+}
+
+.aboutIcons li {
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(101, 100, 100);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+}
+
+.aboutIcons li:hover {
+    cursor: pointer;
+    color: #e65f78;
+    border-color: #e65f78;
+}
+
+
+
+@media (min-width: 1200px) {
+    .about-img {
+        margin-top: 50px;
+    }   
+}
+
+/* ABOUT-PAGE|E N D */
+/* ---------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* SERVICES-PAGE|S T A R T */
+#servicesPage {
+    overflow: auto;
+}
+
+
+.servicesText-1 {
+    position: relative;
+}
+
+.servicesText-1::after {
+    content: " ";
+    width: 40px;
+    height: 2px;
+    background-color: #e65f78;
+    position: absolute;
+    top: 40px;
+    right: 50%;
+    transform: translateX(50%);
+    transition: 0.8s;
+}
+
+.servicesText-1:hover::after {
+    width: 100px;
+}
+
+/* SERVICES-PAGE|E N D */
+/* ---------------------------------------------------------- */
+
+
+
+
+/* HIREME-PAGE|S T A R T */
+.hirePage a:hover {
+    color: #fff;
+    background-color: #e65f78;
+}
+
+/* HIREME-PAGE|E N D */
+/* ---------------------------------------------------------- */
+
+
+
+
+
+/* CLIENT-PAGE|S T A R T  */
+#clientPage {
+    overflow: auto;
+}
+
+.client-edit {
+    width: 110px;
+
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #e65f78;
+    width: 12px;
+    height: 6px;
+    transition: 0.6s;
+}
+
+.carousel-indicators .active,
+.carousel-indicators [data-bs-target]:hover {
+    width: 45px;
+}
+
+
+.client-signatura {
+    font-family: "Caveat", cursive;
+
+}
+
+/* CLIENT-PAGE|E N D */
+/* ---------------------------------------------------------- */
+
+
+
+
+
+
+/* PORTIFOLIO-PAGE|S T A R T */
+.nav-pills .nav-link.active {
+    background-color: #e65f78;
+    font-family: "Liu Jian Mao Cao", cursive;
+
+}
+
+.nav-pills .nav-link {
+    color: black;
+    transition: 0.8s;
+    font-family: "Liu Jian Mao Cao", cursive;
+
+}
+
+.nav-pills .nav-link:hover {
+    color: #fff;
+    background-color: #e65f78;
+    letter-spacing: normal;
+}
+
+.nav-pills {
+    gap: 10px;
+
+}
+
+.cards-container {
+    width: 416px;
+    height: 280px;
+    background-color: rgba(6, 11, 0, 0.8);
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    position: absolute;
+    transform: translate(0%, -100%);
+    opacity: 0;
+
+}
+
+
+.cards-title {
+    /* border: 1px salmon solid; */
+    width: 50%;
+    height: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.behind:hover .cards-container {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 390px) and (max-width: 575px){
+    .cards-container {
+        width: 366px;
+        height: 244px;
+    }
+}
+
+
+@media (min-width: 430px) {
+    .cards-container {
+        width: 406px;
+        height: 271px;
+    }
+} 
+
+
+@media (min-width: 576px) {
+    .cards-container {
+        width: 516px;
+        height: 344px;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .cards-container {
+        width: 696px;
+        height: 464px;
+    }
+
+    .cards-container p {
+        font-size: 20px;
+    }
+
+    .cards-container h3 {
+        font-size: 40px;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .cards-container {
+        width: 296px;
+        height: 197px;
+    }
+
+    .cards-container h3 {
+        font-size: 23px;
+    }
+
+}
+
+
+
+@media (min-width: 1200px) {
+    .cards-container {
+        width: 356px;
+        height: 237px;
+    }
+
+    .cards-container h3 {
+        font-size: 25px;
+    }
+
+}
+
+
+
+@media (min-width: 1400px) {
+    .cards-container {
+        width: 416px;
+        height: 277px;
+    }
+
+    .cards-container h3 {
+        font-size: 30px;
+    }
+}
+
+/* PORTIFOLIO-PAGE|E N D */
+/* ---------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* BLOG-PAGE|S T A R T  */
+#blogPage {
+    overflow: auto;
+}
+
+.card-text {
+    font-family: "Teko", sans-serif;
+    letter-spacing: 5px;
+    transition: 0.6s;
+    border-color: #e65f78 !important;
+
+}
+
+.card-text:hover {
+    cursor: pointer;
+    background-color: #e65f78 !important;
+    font-weight: 600;
+    border: none !important;
+}
+
+/* BLOG-PAGE|E N D */
+/* ---------------------------------------------------------- */
+
+
+
+
+
+
+
+/* CONTACT-PAGE|S T A R T */
+#contactPage {
+    overflow: auto;
+}
+
+.form-edit {
+    height: 150%;
+
+}
+
+.form-edit:hover {
+    border-color: #e65f78;
+}
+
+.form-edit::placeholder {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: "Architects Daughter", cursive;
+}
+
+.form-button {
+    letter-spacing: 6px;
+    transition: 0.6s;
+}
+
+.form-button:hover {
+    background-color: #e54462;
+    font-weight: 600;
+
+}
+
+/* CONTACT-PAGE|E N D */
+/* ---------------------------------------------------------- */
+
+
+
+
+
+
+/* END-PAGE|S T A R T */
+.endPage {
+    overflow: auto;
+    border-top: 3px #e65f78 solid;
+    background-color: #212121;
+}
+
+.icons-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #313131;
+}
+
+.icons i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+
+.icons i:hover {
+    color: #e65f78;
+
+}
+
+/* END-PAGE|E N D */
+/* ---------------------------------------------------------- */
